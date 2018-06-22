@@ -1,0 +1,56 @@
+/***************************************************************************
+ *   Versatile MB 2009 - C Runtime Library                                 *
+ *   Copyright (C) 2002-2010 by Michael Böhme & embyte                     *
+ *   http://www.v-mb.de | webmaster@v-mb.de                                *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   GNU General Public License for more details.                          *
+ *                                                                         *
+ *   You should have received a copy of the GNU General Public License     *
+ *   along with this program; if not, write to the                         *
+ *   Free Software Foundation, Inc.,                                       *
+ *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ ***************************************************************************/
+
+#include "build_options.h"
+
+#ifndef RTL_CSUBS_H
+#define RTL_CSUBS_H
+
+#include "rtl_vars.h"
+#include <windows.h>
+
+typedef struct {
+        char isExtern;
+        char isDefined;
+        char Code[5];
+        DWORD iCode;
+        DWORD Pos;
+        DWORD OldPos;
+        DWORD Parameters;
+        VMBVar *SubParams[16];
+        VMBVar *LocalVars;
+        DWORD ResultType;
+        char Result;
+        
+        int LoopLevel;
+
+  /*      
+        char *DllName;
+        char *DllFunc;
+        HANDLE DllHwnd;
+        FARPOC DllProc;
+  */      
+        
+        void *SnextCSub;        
+        void *SprevCSub;       
+} VMBCSub;
+
+#endif

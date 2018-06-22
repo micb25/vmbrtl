@@ -1,0 +1,138 @@
+# Project: rtl
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = ./obj/runtime_private.res
+OBJ  = ./obj/main.o ./obj/rtl_ccmd.o ./obj/rtl_cmd.o ./obj/rtl_dbgwin.o ./obj/rtl_error.o ./obj/rtl_mem.o ./obj/rtl_parse.o ./obj/rtl_vars.o ./obj/rtl_stack.o ./obj/rtl_rstack.o ./obj/rtl_mathparser.o ./obj/vcl_form.o ./obj/rtl_string.o ./obj/rtl_float.o ./obj/rtl_misc.o ./obj/rtl_for.o ./obj/rtl_loops.o ./obj/rtl_callback.o ./obj/rtl_if.o ./obj/rtl_repeat.o ./obj/vcl_timer.o ./obj/vcl_button.o ./obj/vcl_edit.o ./obj/basefunc.o ./obj/fpar.o ./obj/rtl_subs.o ./obj/vcl_label.o ./obj/rtl_csub.o ./obj/debug_CC.o ./obj/vcl_textbox.o ./obj/vcl_file.o ./obj/rtl_goto.o ./obj/vcl_checkbox.o ./obj/vcl_radiobutton.o ./obj/vcl_groupbox.o ./obj/vcl_image.o $(RES)
+LINKOBJ  = ./obj/main.o ./obj/rtl_ccmd.o ./obj/rtl_cmd.o ./obj/rtl_dbgwin.o ./obj/rtl_error.o ./obj/rtl_mem.o ./obj/rtl_parse.o ./obj/rtl_vars.o ./obj/rtl_stack.o ./obj/rtl_rstack.o ./obj/rtl_mathparser.o ./obj/vcl_form.o ./obj/rtl_string.o ./obj/rtl_float.o ./obj/rtl_misc.o ./obj/rtl_for.o ./obj/rtl_loops.o ./obj/rtl_callback.o ./obj/rtl_if.o ./obj/rtl_repeat.o ./obj/vcl_timer.o ./obj/vcl_button.o ./obj/vcl_edit.o ./obj/basefunc.o ./obj/fpar.o ./obj/rtl_subs.o ./obj/vcl_label.o ./obj/rtl_csub.o ./obj/debug_CC.o ./obj/vcl_textbox.o ./obj/vcl_file.o ./obj/rtl_goto.o ./obj/vcl_checkbox.o ./obj/vcl_radiobutton.o ./obj/vcl_groupbox.o ./obj/vcl_image.o $(RES)
+LIBS =  -L"E:/Coding/Dev-Cpp/lib" -mwindows --disable-runtime-pseudo-reloc -lwinmm -s obj/RTL_ASM.OBJ -lole32 -lshlwapi -O3 -Wl --disable-auto-import  -g3 -march=i586 
+INCS =  -I"E:/Coding/Dev-Cpp/include" 
+CXXINCS =  -I"E:/Coding/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"E:/Coding/Dev-Cpp/include/c++/3.4.2/backward"  -I"E:/Coding/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"E:/Coding/Dev-Cpp/include/c++/3.4.2"  -I"E:/Coding/Dev-Cpp/include" 
+BIN  = bin/runtime.exe
+CXXFLAGS = $(CXXINCS)   -fexpensive-optimizations -O3 -g3 -march=i586
+CFLAGS = $(INCS) -fno-builtin -fmerge-constants -foptimize-register-move -nostartfiles  -nodefaultlibs  -nostdlib   -fexpensive-optimizations -O3 -g3 -march=i586
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before bin/runtime.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "bin\runtime.exe" $(LIBS)
+
+./obj/main.o: main.c
+	$(CC) -c main.c -o ./obj/main.o $(CFLAGS)
+
+./obj/rtl_ccmd.o: rtl_ccmd.c
+	$(CC) -c rtl_ccmd.c -o ./obj/rtl_ccmd.o $(CFLAGS)
+
+./obj/rtl_cmd.o: rtl_cmd.c
+	$(CC) -c rtl_cmd.c -o ./obj/rtl_cmd.o $(CFLAGS)
+
+./obj/rtl_dbgwin.o: rtl_dbgwin.c
+	$(CC) -c rtl_dbgwin.c -o ./obj/rtl_dbgwin.o $(CFLAGS)
+
+./obj/rtl_error.o: rtl_error.c
+	$(CC) -c rtl_error.c -o ./obj/rtl_error.o $(CFLAGS)
+
+./obj/rtl_mem.o: rtl_mem.c
+	$(CC) -c rtl_mem.c -o ./obj/rtl_mem.o $(CFLAGS)
+
+./obj/rtl_parse.o: rtl_parse.c
+	$(CC) -c rtl_parse.c -o ./obj/rtl_parse.o $(CFLAGS)
+
+./obj/rtl_vars.o: rtl_vars.c
+	$(CC) -c rtl_vars.c -o ./obj/rtl_vars.o $(CFLAGS)
+
+./obj/rtl_stack.o: rtl_stack.c
+	$(CC) -c rtl_stack.c -o ./obj/rtl_stack.o $(CFLAGS)
+
+./obj/rtl_rstack.o: rtl_rstack.c
+	$(CC) -c rtl_rstack.c -o ./obj/rtl_rstack.o $(CFLAGS)
+
+./obj/rtl_mathparser.o: rtl_mathparser.c
+	$(CC) -c rtl_mathparser.c -o ./obj/rtl_mathparser.o $(CFLAGS)
+
+./obj/vcl_form.o: vcl_form.c
+	$(CC) -c vcl_form.c -o ./obj/vcl_form.o $(CFLAGS)
+
+./obj/rtl_string.o: rtl_string.c
+	$(CC) -c rtl_string.c -o ./obj/rtl_string.o $(CFLAGS)
+
+./obj/rtl_float.o: rtl_float.c
+	$(CC) -c rtl_float.c -o ./obj/rtl_float.o $(CFLAGS)
+
+./obj/rtl_misc.o: rtl_misc.c
+	$(CC) -c rtl_misc.c -o ./obj/rtl_misc.o $(CFLAGS)
+
+./obj/rtl_for.o: rtl_for.c
+	$(CC) -c rtl_for.c -o ./obj/rtl_for.o $(CFLAGS)
+
+./obj/rtl_loops.o: rtl_loops.c
+	$(CC) -c rtl_loops.c -o ./obj/rtl_loops.o $(CFLAGS)
+
+./obj/rtl_callback.o: rtl_callback.c
+	$(CC) -c rtl_callback.c -o ./obj/rtl_callback.o $(CFLAGS)
+
+./obj/rtl_if.o: rtl_if.c
+	$(CC) -c rtl_if.c -o ./obj/rtl_if.o $(CFLAGS)
+
+./obj/rtl_repeat.o: rtl_repeat.c
+	$(CC) -c rtl_repeat.c -o ./obj/rtl_repeat.o $(CFLAGS)
+
+./obj/vcl_timer.o: vcl_timer.c
+	$(CC) -c vcl_timer.c -o ./obj/vcl_timer.o $(CFLAGS)
+
+./obj/vcl_button.o: vcl_button.c
+	$(CC) -c vcl_button.c -o ./obj/vcl_button.o $(CFLAGS)
+
+./obj/vcl_edit.o: vcl_edit.c
+	$(CC) -c vcl_edit.c -o ./obj/vcl_edit.o $(CFLAGS)
+
+./obj/basefunc.o: fpar/basefunc.c
+	$(CC) -c fpar/basefunc.c -o ./obj/basefunc.o $(CFLAGS)
+
+./obj/fpar.o: fpar/fpar.c
+	$(CC) -c fpar/fpar.c -o ./obj/fpar.o $(CFLAGS)
+
+./obj/rtl_subs.o: rtl_subs.c
+	$(CC) -c rtl_subs.c -o ./obj/rtl_subs.o $(CFLAGS)
+
+./obj/vcl_label.o: vcl_label.c
+	$(CC) -c vcl_label.c -o ./obj/vcl_label.o $(CFLAGS)
+
+./obj/rtl_csub.o: rtl_csub.c
+	$(CC) -c rtl_csub.c -o ./obj/rtl_csub.o $(CFLAGS)
+
+./obj/debug_CC.o: debug_CC.c
+	$(CC) -c debug_CC.c -o ./obj/debug_CC.o $(CFLAGS)
+
+./obj/vcl_textbox.o: vcl_textbox.c
+	$(CC) -c vcl_textbox.c -o ./obj/vcl_textbox.o $(CFLAGS)
+
+./obj/vcl_file.o: vcl_file.c
+	$(CC) -c vcl_file.c -o ./obj/vcl_file.o $(CFLAGS)
+
+./obj/rtl_goto.o: rtl_goto.c
+	$(CC) -c rtl_goto.c -o ./obj/rtl_goto.o $(CFLAGS)
+
+./obj/vcl_checkbox.o: vcl_checkbox.c
+	$(CC) -c vcl_checkbox.c -o ./obj/vcl_checkbox.o $(CFLAGS)
+
+./obj/vcl_radiobutton.o: vcl_radiobutton.c
+	$(CC) -c vcl_radiobutton.c -o ./obj/vcl_radiobutton.o $(CFLAGS)
+
+./obj/vcl_groupbox.o: vcl_groupbox.c
+	$(CC) -c vcl_groupbox.c -o ./obj/vcl_groupbox.o $(CFLAGS)
+
+./obj/vcl_image.o: vcl_image.c
+	$(CC) -c vcl_image.c -o ./obj/vcl_image.o $(CFLAGS)
+
+./obj/runtime_private.res: runtime_private.rc 
+	$(WINDRES) -i runtime_private.rc --input-format=rc -o ./obj/runtime_private.res -O coff 

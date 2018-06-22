@@ -1,0 +1,27 @@
+
+/*
+
+*/
+
+#include <winresrc.h>
+#define IDC_DIALOG1 2000
+#define IDC_LINE1   2001
+#define IDC_EDIT1   2002
+
+#include "build_options.h"
+
+#ifdef DEBUGGER
+1 10 "./bin/autoexec_dbg.vmbc"
+#else
+1 10 "./bin/autoexec.vmbc"
+#endif
+
+IDC_DIALOG1 DIALOG DISCARDABLE 0, 0, 240, 58
+STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION ""
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK, 95, 37, 50, 14
+    EDITTEXT        IDC_EDIT1,7, 19, 226, 14, ES_AUTOHSCROLL
+    LTEXT           "",IDC_LINE1,7,7,226,8
+END

@@ -1,0 +1,45 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+#include "dialog_res.rc"
+
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "runtime.ico"
+
+//
+// SUPPORT FOR WINDOWS XP THEMES:
+// THIS WILL MAKE THE PROGRAM USE THE COMMON CONTROLS
+// LIBRARY VERSION 6.0 (IF IT IS AVAILABLE)
+//
+1 24 "./bin/runtime.exe.Manifest"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 4,0,0,6300
+PRODUCTVERSION 4,0,0,6300
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040704E4"
+		 {
+			 VALUE "CompanyName", "embyte"
+			 VALUE "FileVersion", ""
+			 VALUE "FileDescription", "Versatile MB Runtime Library"
+			 VALUE "InternalName", "RUNTIME.EXE"
+			 VALUE "LegalCopyright", "Copyright (C) 2002-2010 by Michael Böhme & embyte"
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", ""
+			 VALUE "ProductName", "Versatile MB"
+			 VALUE "ProductVersion", "4.0.0.0"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0407, 1252
+	 }
+}
+

@@ -1,0 +1,11 @@
+If[1] @0x021ae078 = {
+	IfCode = ""
+	wasExecuted = 0
+	isLocal = 0
+	SubLevel = 0
+
+	prevIF = 0x00000000
+	nextIF = 0x00000000
+}
+If[2] @0x00000000 = {
+}

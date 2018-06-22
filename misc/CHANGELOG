@@ -1,0 +1,125 @@
+--------------------------------------------------------------------------------
+Versatile MB 2011 - C Runtime Library - CHANGELOG
+--------------------------------------------------------------------------------
+
+2010-03-15:
+2010-03-14:
+2010-03-13:
+2010-03-12:
+2010-03-11:
+2010-03-10:
+           - Bugfixes bei If's
+           - Speicherleck in FPAR behoben
+           - Debugger Fenster
+           - Leistungssteigerung von 5% durch -fno-builtin
+
+2009-09-21:
+           - Bugfixes in PasswordDialog und InputDialog
+           - Division durch 0 gefixt
+
+2009-09-18:
+           - Optimierungen, Runtime 1KB kleiner
+           - GCC Version wird ausgegeben
+
+2008-10-03:
+           - .SetPos Methode hinzugefügt zu visuellen Komponenten
+           - weitere Speicherlecks entfernt
+
+2008-10-02:
+           - TextBox Komponente implementiert
+           - Code Optimierungen in der VCL => kleinere RTL
+
+2008-09-??:
+           - Implementierung von Tasturfunktionen(KeyPressed, KeyPushed, UpdateKeys)
+
+2008-09-22:
+           - SelectDir, SelectColor, InputDialog, PasswordDialog implementiert
+
+2008-09-09:
+           - Parameter in Subs können nun auch Komponenten sein
+           - Bug bei Form.Center() behoben
+
+2008-09-06:
+           - externe Subs
+           - Bug mit If/Else/IfElse behoben
+           - Debugger Window angefangen
+
+2008-09-05:
+           - rekursive Subs
+           - Speicherverbrauch verbessert
+           - Optimierungen für eine kleinere Runtime.exe
+
+2008-09-05:
+           - Subs verbessert
+           - Label Komponente implementiert
+           - weitere Befehle implementiert
+
+2008-09-04:
+           - Subs implementiert
+           - Funktionen implementiert(And, Or, Xor, MidStr...)
+           - Fehler behoben in einigen Funktionen(LCase, UCase)
+
+2008-09-03:
+           - mathematischer Parser
+           - Verarbeitung von Floatwerten
+           - Edit Komponente
+           - Floatfunktionen
+
+2008-09-02:
+           - Button Komponente vervollständigt
+           - Build Optionen
+
+2008-09-01:
+           - Repeat / Until Konstruktionen
+           - Form Komponente vervollständigt
+           - Timer Komponente hinzugefügt
+           - Button Komponente
+
+2008-08-31:
+           - Fehler bei Ifs beseitigt
+           - Fehler mit Goto in If beseitigt
+
+2008-08-30:
+           - VCL Form Verbesserungen(flicker free)
+           - einfache If's funktionieren
+           - Laden aus RAW Resourcen nun möglich
+
+2008-08-29:
+           - Implementierung der Funktionen ParamCount und ParamStr
+
+2008-08-28:
+           - Ablaufgeschwindigkeit erhöht
+           - VCL Form verbessert
+           - AlphaBlending / Transparenz für Form Komponenten
+
+2008-08-09:
+           - For Schleifen
+           - Linux Portierung mit Wine
+           - Callback Funktionen(noch keine Stackbereinigung!)
+
+2008-08-08:
+           - weitere Befehle implementiert
+           - For und Schleifen vorbereitet
+
+2008-08-06:
+           - einige Hotkeys
+           - neue Befehle(Goto, Precision, ...)
+
+2008-08-05:
+           - Größe der Ausgabedatei verkleinert
+           - Icon für Fenster wird nun richtig geladen
+           - Hintergrundfarbe der Fenster geändert
+           - XP Style aktiviert
+           - einige Befehle implementiert
+           - VCL Form vorbereitet
+           - Speicherloch geschlossen
+
+2007-04-04:
+           - Code wird geladen und decodiert
+           - Übergabe an Parser
+           - sehr simple Befehle bereits eingebaut
+           - Projekt aufgeräumt
+
+--------------------------------------------------------------------------------
+ End of File
+-------------------------------------------------------------------------------- 
